@@ -13,6 +13,7 @@
 		6D4CCB111A91E42F00865F63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D4CCB101A91E42F00865F63 /* Images.xcassets */; };
 		6D4CCB141A91E42F00865F63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4CCB121A91E42F00865F63 /* LaunchScreen.xib */; };
 		6D4CCB201A91E42F00865F63 /* firstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4CCB1F1A91E42F00865F63 /* firstTests.swift */; };
+		6DBE1B541A97144D00141E3C /* Print.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBE1B531A97144D00141E3C /* Print.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		6D4CCB191A91E42F00865F63 /* firstTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4CCB1E1A91E42F00865F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D4CCB1F1A91E42F00865F63 /* firstTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstTests.swift; sourceTree = "<group>"; };
+		6DBE1B511A97135800141E3C /* Print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Print.h; sourceTree = "<group>"; };
+		6DBE1B521A97144D00141E3C /* first-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "first-Bridging-Header.h"; sourceTree = "<group>"; };
+		6DBE1B531A97144D00141E3C /* Print.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Print.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,9 @@
 				6D4CCB101A91E42F00865F63 /* Images.xcassets */,
 				6D4CCB121A91E42F00865F63 /* LaunchScreen.xib */,
 				6D4CCB071A91E42F00865F63 /* Supporting Files */,
+				6DBE1B511A97135800141E3C /* Print.h */,
+				6DBE1B531A97144D00141E3C /* Print.m */,
+				6DBE1B521A97144D00141E3C /* first-Bridging-Header.h */,
 			);
 			path = first;
 			sourceTree = "<group>";
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DBE1B541A97144D00141E3C /* Print.m in Sources */,
 				6D4CCB0C1A91E42F00865F63 /* ViewController.swift in Sources */,
 				6D4CCB0A1A91E42F00865F63 /* AppDelegate.swift in Sources */,
 			);
@@ -336,9 +344,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = first/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "first/first-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +357,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = first/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "first/first-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +418,7 @@
 				6D4CCB251A91E42F00865F63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D4CCB261A91E42F00865F63 /* Build configuration list for PBXNativeTarget "firstTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +427,7 @@
 				6D4CCB281A91E42F00865F63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
