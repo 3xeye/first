@@ -14,6 +14,7 @@
 		6D4CCB141A91E42F00865F63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D4CCB121A91E42F00865F63 /* LaunchScreen.xib */; };
 		6D4CCB201A91E42F00865F63 /* firstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4CCB1F1A91E42F00865F63 /* firstTests.swift */; };
 		6DBE1B541A97144D00141E3C /* Print.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBE1B531A97144D00141E3C /* Print.m */; };
+		6DBE1B561A97690200141E3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBE1B551A97690200141E3C /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		6DBE1B511A97135800141E3C /* Print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Print.h; sourceTree = "<group>"; };
 		6DBE1B521A97144D00141E3C /* first-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "first-Bridging-Header.h"; sourceTree = "<group>"; };
 		6DBE1B531A97144D00141E3C /* Print.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Print.m; sourceTree = "<group>"; };
+		6DBE1B551A97690200141E3C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				6D4CCB071A91E42F00865F63 /* Supporting Files */,
 				6DBE1B511A97135800141E3C /* Print.h */,
 				6DBE1B531A97144D00141E3C /* Print.m */,
+				6DBE1B551A97690200141E3C /* main.m */,
 				6DBE1B521A97144D00141E3C /* first-Bridging-Header.h */,
 			);
 			path = first;
@@ -221,6 +224,7 @@
 			files = (
 				6DBE1B541A97144D00141E3C /* Print.m in Sources */,
 				6D4CCB0C1A91E42F00865F63 /* ViewController.swift in Sources */,
+				6DBE1B561A97690200141E3C /* main.m in Sources */,
 				6D4CCB0A1A91E42F00865F63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

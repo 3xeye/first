@@ -21,21 +21,3 @@
 @end
 
 
-int main(int argc, const char *argv[])
-{
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    //return NsapplicationMain(argc,(const char**)argv);
-    
-    NSLog(@"className= /"%@/"", [Print printName]);
-    
-    Print *p = [[Print alloc] init];
-    [p setCaption:@"MyCaption"];
-    [p setPhotographer:@"myPhotographer"];
-    
-    NSLog(@"Caption = /"%@/"", [p caption]);
-    
-    NSLog(@"Photographer = /"%@/"", [p photographer]);
-    
-    [pool drain];
-    return 0;
-}
